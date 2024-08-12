@@ -12,14 +12,14 @@ class BulkHandler(metaclass=abc.ABCMeta):
         """
         Will be invoked for each row in the result set.
 
-        :param dict row: A row from the result set.
+        :param row: A row from the result set.
         """
         raise NotImplementedError()
 
     # ------------------------------------------------------------------------------------------------------------------
     def start(self) -> None:
         """
-        Will be invoked before the first row will be processed.
+        Will be invoked before the first row is processed.
         """
         raise NotImplementedError()
 

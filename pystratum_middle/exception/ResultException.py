@@ -39,7 +39,7 @@ class ResultException(RuntimeError):
         """
         The expected row count.
 
-        :rtype: str
+        :rtype str:
         """
         return self._expected_row_count
 
@@ -49,7 +49,7 @@ class ResultException(RuntimeError):
         """
         The actual row count.
 
-        :rtype: str
+        :rtype str:
         """
         return self._actual_row_count
 
@@ -59,7 +59,7 @@ class ResultException(RuntimeError):
         """
         The query.
 
-        :rtype: str
+        :rtype str:
         """
         return self._query
 
@@ -73,7 +73,7 @@ class ResultException(RuntimeError):
         :param int actual_row_count: The actual row count.
         :param str query: The query.
 
-        :rtype: str
+        :rtype str:
         """
         query = query.strip()
 
